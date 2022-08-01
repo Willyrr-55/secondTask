@@ -1,0 +1,12 @@
+<h4 class="text-center">Información obtenida de una consulta a una API</h4>
+<div class="row pt-4  row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-3">
+  <div class="col px-2 mb-4" *ngFor="let user of users" >
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{user?.name}}</h5>
+          <p class="card-text">{{user?.phone}}</p>
+        </div>
+      </div>
+  </div>
+</div>
+
